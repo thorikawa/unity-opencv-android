@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.polysfactory.n3.unity"
+    package="com.polysfactory.n3.ar"
     android:versionCode="1"
     android:versionName="0.1" >
 
@@ -12,8 +12,8 @@
         android:smallScreens="true" />
 
     <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -50,13 +50,14 @@
             </intent-filter>
 
             <meta-data
+                android:name="android.app.lib_name"
+                android:value="unity" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="true" />
+            <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_commands" />
-        </activity>
-        <activity
-            android:name="com.polysfactory.n3.unity.CaptureActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="landscape" >
         </activity>
     </application>
 

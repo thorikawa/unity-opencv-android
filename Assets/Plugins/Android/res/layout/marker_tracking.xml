@@ -4,18 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.polysfactory.n3.unity.MyCameraView
+    <org.opencv.android.JavaCameraViewEx
         android:id="@+id/fd_activity_surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="top|center_horizontal" />
-
-    <LinearLayout
-        android:id="@+id/marker_preview_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
-        android:gravity="center"
-        android:orientation="vertical" />
 
 </FrameLayout>

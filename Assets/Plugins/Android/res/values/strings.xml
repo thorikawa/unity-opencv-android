@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">N3 Demo</string>
+    <string name="app_name">N3 AR</string>
     <string name="capture_marker">capture marker</string>
     <string name="capture">capture</string>
     <string name="capture_again">capture again</string>

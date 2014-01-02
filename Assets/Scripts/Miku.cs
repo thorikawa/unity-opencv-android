@@ -17,7 +17,7 @@ public class Miku : MonoBehaviour
 	
 	void JavaMessage (string message)
 	{ 
-		// Debug.Log ("message from java: " + message);
+		Debug.Log ("message from java: " + message);
 		string[] rects = message.Split (new char[] {'-'});
 		if (rects [0].Equals ("X")) {
 			renderer.enabled = false;
